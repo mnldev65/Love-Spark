@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;             
+    width: 100%;
+    max-width: 900px;      
+    padding: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namorados-img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.container-forgot {
+   border: solid 4px #fff; 
+   border-radius: 8px;
+   padding: 14px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+   background: rgba(255, 255, 255, 0.15);
+   backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: antiquewhite;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.label-container {
+    color: antiquewhite;
+    margin-bottom: 4px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 16px;
+    padding: 8px;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.btn-enter {
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    background-color: #d63031;
+    color: antiquewhite;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-enter:hover {
+    background-color: #ff4757;
+}
+
+.links-container {
+    font-size: 16px; 
+    width: 100%; 
+    text-decoration: none;
+    text-align: center;
+    text-align: center;
+}
+
+.forgot {
+    color: antiquewhite;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;     
+        justify-content: center;
+        max-width: 1050px;             
+        gap: 300px;   
+    }
+
+    .icon-container img {
+        max-width: 400px;        
+    }
+}
