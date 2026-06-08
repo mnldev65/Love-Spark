@@ -85,7 +85,7 @@ form {
     background: rgba(255, 255, 255, 0.8);
 }
 
-.btn-enter {
+.btn-confirmar {
     margin-bottom: 40px;
     border: none;
     border-radius: 14px;
@@ -99,7 +99,7 @@ form {
     transition: background-color 0.3s;
 }
 
-.btn-enter:hover {
+.btn-confirmar:hover {
     background-color: #ff4757;
 }
 

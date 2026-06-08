@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/esqueciSenha.css">
     <title>https://wwwforgotpassword_Love-Spark.com</title>
 </head>
@@ -21,12 +25,27 @@
             </div>
             <div class="container-forgot">
                 <h1>Esqueceu a Senha</h1>
-                <form action="">
-                    <label for="email" class="label-container">Email</label>
+                <form action="" class="form">
+                    <label for="email" class="label-container">
+                        Email
+                    </label>
                     <input name="email" type="email" class="input-container" placeholder="Digite seu email">
 
-                    <label for="codigo" class="label-container">Código</label>
+                    <label for="codigo" class="label-container">
+                        Código
+                    </label>
                     <input name="codigo" type="text" class="input-container" placeholder="Digite o código do seu email">
+
+                    <label for="senha" class="label-container">
+                        Senha
+                    </label>
+                    <input name="senha" type="password" class="input-container" placeholder="Digite sua nova senha">
+
+                    <label for="confirme-senha" class="label-container">
+                        Confirmar a senha
+                    </label>
+                    <input name="confirme-senha" type="password" class="input-container"
+                        placeholder="Confirme a sua nova senha">
 
                     <button class="btn-confirmar">Confirmar</button>
 
@@ -40,4 +59,7 @@
         </div>
     </main>
 </body>
+
+<script src="./js/forgot.js"></script>
+
 </html>

@@ -1,5 +1,5 @@
-const botao = document.querySelector('.btn-enter')
+const btnEnter = document.querySelector('.btn-enter')
 
-botao.addEventListener('click', function() {
-    window.location.href = './homePage.html'
-});
+btnNavBar.addEventListener('click', function signUp() {
+    window.location.href = '../Html/homePage.html';
+})
