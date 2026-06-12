@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <title>>https://wwwcadastro_Love-Spark.com</title>
 </head>
+
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="img1">
+                <img src="./assets/icons/rose flower-bro.svg" alt="rosas">
+            </div>
+            <div class="campo-cadastro">
+                <form action="" class="form-cadastro">
+                    <h1>Cadastro</h1>
+                    
+                    <div class="form-row">
+                        <div class="field-group">
+                            <label for="nome" class="labels">Nome:</label>
+                            <input type="text" name="nome" placeholder="Seu nome" class="inputs" id="nomeUser">
+                        </div>
+                        <div class="field-group">
+                            <label for="sobrenome" class="labels">Sobrenome:</label>
+                            <input type="text" name="sobrenome" placeholder="Seu sobrenome" class="inputs" id="sobrenomeUser">
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="email" class="labels">Email:</label>
+                        <input type="email" name="email" placeholder="Digite seu email" class="inputs" id="emailUser">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="telefone" class="labels">Telefone:</label>
+                        <input type="tel" name="telefone" placeholder="(99) 99999-9999" class="inputs" id="telefoneUser">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field-group">
+                            <label for="senha" class="labels">Senha:</label>
+                            <input type="password" name="senha" placeholder="Crie uma senha" class="inputs" id="senhaUser">
+                        </div>
+                        <div class="field-group">
+                            <label for="confirmar" class="labels">Confirmar senha:</label>
+                            <input type="password" name="confirmar" placeholder="Confirme" class="inputs" id="ConfirmarUser">
+                        </div>
+                    </div>
+                    
+                    <button class="btn-criarConta">Criar conta</button>
+                    <div class="links-container">
+                        <a href="index.html" class="forgot">
+                            Voltar para o Login
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="img2">
+                <img src="./assets/icons/Valentine's bouquet with a card-pana.svg" alt="buquer de flores">
+            </div>
+        </div>
+    </main>
 </body>
+<script src="./js/cadastro.js"></script>
 </html>
