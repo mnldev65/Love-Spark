@@ -1,7 +1,10 @@
 const botaoConfiguracao = document.getElementById('openSettings');
 const menuLateral = document.querySelector('.sidebar-config');
+const mudarSite = document.querySelector('.trocarModelo');
 
-alert('Use o agente de IA para poder personalizar o site, ele se localiza na configurações')
+setTimeout(function () {
+    alert('Use o agente de IA para poder personalizar o site, ele se localiza na configurações');
+}, 3000);
 
 botaoConfiguracao.addEventListener('click', function apertarBotao(event) {
     menuLateral.classList.toggle('menu-aberto');
@@ -11,3 +14,6 @@ botaoConfiguracao.addEventListener('click', function apertarBotao(event) {
         : 'rotate(0deg)';
 })
 
+mudarSite.addEventListener('click', function trocar(event) {
+    window.location.href = "../../../template.html";
+});

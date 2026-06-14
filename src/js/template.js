@@ -9,7 +9,7 @@ BotaoDark.addEventListener('click', function apetarBtnDark(event) {
 
 
 BotaoAesthetic.addEventListener('click', function apetarBtnAesthetic(event) {
-    window.location.href = "./templateModels/aesthetic/html/home.html";
+    window.location.href = "./templateModels/aesthetic/html/homeAesthetic.html";
 })
 
 
