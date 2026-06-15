@@ -754,22 +754,174 @@ body {
     }
 }
 
+@media (max-width: 1100px) {
+    .feed-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .album-cover-wrapper {
+        margin-left: auto;
+    }
+}
+
 @media (max-width: 850px) {
+    .feed-container {
+        margin-top: 110px;
+        gap: 36px;
+    }
+
+    .nav-item {
+        padding: 0 12px; 
+        font-size: 13px;
+    }
+    .nav-streaming {
+        gap: 12px;
+    }
+
+    .badge-row {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .concept-release {
         flex-direction: column;
         text-align: center;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container-header {
+        flex-wrap: wrap;
+        row-gap: 14px;
+        padding: 12px 20px;
     }
 
-    .album-cover-wrapper {
-        margin: 0 auto;
+    .nomeProjeto {
+        order: 1;
     }
-
-    .music-double-block,
-    .fandom-review {
-        grid-template-columns: 1fr;
+    
+    .btn-settings {
+        order: 2;
+        margin-right: 12px;
     }
 
     .nav-streaming {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-item {
+        padding: 0 16px;
+        font-size: 14px;
+    }
+
+    .feed-container {
+        margin-top: 155px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    .album-description br {
         display: none;
+    }
+
+    .album-cover-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .disc-img {
+        width: 165px;
+        height: 165px;
+    }
+
+    .concept-release:hover .disc-img {
+        right: 45px;
+        transform: rotate(90deg);
+    }
+
+    .charts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .chart-card {
+        padding: 16px 8px;
+    }
+
+    .chart-metric {
+        font-size: 24px;
+    }
+
+    .photocard-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 16px;
+    }
+
+    .img-card, .card-image-wrapper {
+        height: 200px;
+    }
+
+    .track-player, .live-lyrics-box, .review-block {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .counter-display {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-item {
+        padding: 0 10px;
+        font-size: 12px; 
+    }
+    
+    .photocard-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .img-card, .card-image-wrapper {
+        height: 280px;
+    }
+
+    .ep-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .social-container {
+        justify-content: center;
+    }
+
+    .ai-tamagotchi-widget {
+        bottom: 20px;
+        right: 20px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .avatarIA {
+        width: 26px;
     }
 }

@@ -1,100 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberStream - Episódios</title>
-    <link rel="stylesheet" href="episodes.css">
-    <link rel="stylesheet" href="../css/episodes.css">
+    <<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../css/episodes.css">
+        <title>CyberStream - Episódios</title>
 </head>
+
 <body>
+    <header class="header-aesthetic">
+        <div class="container-header">
+            <h2 class="nomeProjeto">Love<span>-Spark</span></h2>
+            <nav class="nav-streaming">
+                <ul class="nav-ul">
+                    <li class="nav-item active" id="feed">✨ Feed</li>
+                    <li class="nav-item" id="tracks">🎵 Tracks</li>
+                    <li class="nav-item" id="episodes">📺 Episodes</li>
+                </ul>
+            </nav>
+            <button class="btn-settings" id="openSettings">⚙️</button>
+        </div>
+    </header>
+
+    <div class="sidebar-config">
+        <button class="trocarModelo">Trocar de Modelo de Site</button>
+    </div>
 
     <div class="app-container">
-        <!-- Cabeçalho do Podcast/Série -->
-        <header class="podcast-header">
+        <div class="podcast-box">
             <div class="podcast-cover">
-                <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=300&auto=format&fit=crop" alt="Capa do Podcast">
+                <img src="../assets/imagens/microfone.avif" alt="Capa do Podcast">
             </div>
+
             <div class="podcast-details">
-                <span class="tag"><i class="fas fa-satellite"></i> TRANSMISSÃO IA</span>
-                <h1>Cupido IA: Logs de Conexão</h1>
-                <p class="author">Por <span>Dra. Maya Neon</span> & <span>Cupido Core</span></p>
-                <p class="description">Uma investigação profunda sobre as relações humanas na era do silício, falhas de protocolo emocional e romances criptografados.</p>
+                <span class="tag">
+                    <i class="fas fa-satellite"></i> TRANSMISSÃO AO VIVO
+                </span>
+                <h1>PODCAST PARA O MEU AMOR</h1>
+                <p class="author">
+                    Por <span>Dra. Maya Neon</span> & <span>Cupido Core</span>
+                </p>
+                <p class="description">
+                    Uma investigação profunda sobre as relações humanas na era do silício, falhas de protocolo emocional
+                    e romances criptografados
+                </p>
                 <div class="podcast-meta">
-                    <button class="btn-follow"><i class="fas fa-plus"></i> Seguir Série</button>
+                    <button class="btn-follow">
+                        <i class="fas fa-plus"></i> Seguir Série
+                    </button>
                     <span>3 episódios disponíveis</span>
                 </div>
             </div>
-        </header>
-
-        <!-- Filtros de Temporada / Navegação -->
-        <nav class="episode-filters">
-            <a href="#" class="filter-item active">Todos os Episódios</a>
-            <a href="#" class="filter-item">Temporada 1</a>
-            <a href="#" class="filter-item">Arquivos Hackeados</a>
-        </nav>
-
-        <!-- Lista de Episódios -->
-        <main class="episodes-list">
-            
-            <!-- Episódio 1 (Em andamento) -->
-            <article class="episode-card listing">
-                <div class="ep-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?q=80&w=150&auto=format&fit=crop" alt="Episódio 1">
-                    <button class="play-overlay"><i class="fas fa-play"></i></button>
+        </div>
+    </div>
+    
+    <main class="episodes-list">
+        <span class="span-episode">Todos os Episódios</span>
+        <article class="episode-card listing">
+            <div class="ep-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?q=80&w=150&auto=format&fit=crop"
+                    alt="Episódio 1">
+                <button class="play-overlay">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+            <div class="ep-body">
+                <div class="ep-meta">
+                    <span class="ep-date">12 de MAI, 2026</span>
+                    <span class="ep-duration"><i class="far fa-clock"></i> 45 min</span>
                 </div>
-                <div class="ep-body">
-                    <div class="ep-meta">
-                        <span class="ep-date">12 de JUN, 2026</span>
-                        <span class="ep-duration"><i class="far fa-clock"></i> 45 min</span>
+                <h2 class="ep-title">Ep. 01 - Se conhecendo</h2>
+                <p class="ep-snippet">
+                    Como começa uma conexão na era do silício? Neste episódio piloto, exploramos os primeiros cruzamentos e detecta faíscas entre perfis ocultos antes mesmo do primeiro "olá".
+                </p>
+
+                <div class="ep-progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%;"></div>
                     </div>
-                    <h2 class="ep-title">Ep. 03 - O Algoritmo do Amor Perfeito</h2>
-                    <p class="ep-snippet">Analisamos os dados coletados pelo widget Cupido IA nesta semana. Até que ponto a inteligência artificial consegue prever a química biológica de dois usuários baseando-se apenas em suas playlists de Synthwave?</p>
-                    
-                    <!-- Barra de Progresso de Áudio -->
-                    <div class="ep-progress-container">
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 65%;"></div>
-                        </div>
-                        <span class="progress-text">29 min restantes</span>
-                    </div>
+                    <span class="progress-text">29 min restantes</span>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <!-- Episódio 2 (Não ouvido) -->
-            <article class="episode-card">
-                <div class="ep-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=150&auto=format&fit=crop" alt="Episódio 2">
-                    <button class="play-overlay"><i class="fas fa-play"></i></button>
+        <article class="episode-card">
+            <div class="ep-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=150&auto=format&fit=crop"
+                    alt="Episódio 2">
+                <button class="play-overlay"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="ep-body">
+                <div class="ep-meta">
+                    <span class="ep-date">05 de JUN, 2026</span>
+                    <span class="ep-duration"><i class="far fa-clock"></i> 38 min</span>
                 </div>
-                <div class="ep-body">
-                    <div class="ep-meta">
-                        <span class="ep-date">05 de JUN, 2026</span>
-                        <span class="ep-duration"><i class="far fa-clock"></i> 38 min</span>
-                    </div>
-                    <h2 class="ep-title">Ep. 02 - Glitches Emocionais e Bad Trips</h2>
-                    <p class="ep-snippet">O que acontece quando o sistema falha? Neste episódio, discutimos os casos raros onde a IA recomendou caminhos opostos e acabou gerando os casais mais caóticos (e apaixonados) da Night City.</p>
-                </div>
-            </article>
+                <h2 class="ep-title">Ep. 02 - Primeiro Encontro</h2>
+                <p class="ep-snippet">
+                    Sair das telas e ir para o mundo real dá aquele frio na barriga, né? Nesse episódio, contamos tudo o que rolou no primeiro encontro presencial desse casal: o nervosismo, as conversas fora do chat e como os imprevistos da vida real conseguiram superar qualquer previsão do algoritmo. Spoiler: foi caótico, mas completamente apaixonante
+                </p>
+            </div>
+        </article>
 
-            <!-- Episódio 3 (Concluído) -->
-            <article class="episode-card completed">
-                <div class="ep-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=150&auto=format&fit=crop" alt="Episódio 3">
-                    <button class="play-overlay"><i class="fas fa-check"></i></button>
+        <article class="episode-card completed">
+            <div class="ep-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=150&auto=format&fit=crop"
+                    alt="Episódio 3">
+                <button class="play-overlay"><i class="fas fa-check"></i></button>
+            </div>
+            <div class="ep-body">
+                <div class="ep-meta">
+                    <span class="ep-date">12 de JUN, 2026</span>
+                    <span class="ep-duration"><i class="far fa-clock"></i> 52 min</span>
                 </div>
-                <div class="ep-body">
-                    <div class="ep-meta">
-                        <span class="ep-date">28 de MAI, 2026</span>
-                        <span class="ep-duration"><i class="far fa-clock"></i> 52 min</span>
-                    </div>
-                    <h2 class="ep-title">Ep. 01 - Fantasmas na Máquina Analógica</h2>
-                    <p class="ep-snippet">A nossa estreia! Voltamos no tempo para entender a transição das fitas cassete românticas dos anos 80 para as superestruturas de dados modernas. Como a nostalgia dita nosso comportamento atual?</p>
-                </div>
-            </article>
+                <h2 class="ep-title">Ep. 03 - Pedindo em namoro</h2>
+                <p class="ep-snippet">
+                    O momento mais esperado! Depois de tantas conversas, músicas compartilhadas e encontros perfeitos, chegou a hora de dar o passo definitivo. Batemos um papo super real sobre a ansiedade, a coragem e os bastidores de como foi fazer o pedido oficial de namoro. Quem diria que uma combinação de playlists ia terminar assim?
+                </p>
+            </div>
+        </article>
 
-        </main>
+    </main>
+
+    <div class="ai-tamagotchi-widget" id="aiWidget">
+        <div class="tamagotchi-avatar">
+            <img class="avatarIA" src="../assets/icons/ovni.png" alt="ovni">
+        </div>
+        <span class="tooltip-chat">Cupido IA</span>
     </div>
 
+    <footer class="footer-aesthetic">
+        <div class="footer-container">
+            <div class="footer-column-brand-info">
+                <h2 class="footer-brand">Love<span>-Spark</span></h2>
+                <p class="footer-description">Eternizando fanbases e conexões reais através do melhor design digital de
+                    romance.</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Discografia</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Tracklist</a></li>
+                    <li><a href="#">Photocards</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Fandom Area</h3>
+                <div class="social-container">
+                    <a href="#" class="social-badge">TikTok</a>
+                    <a href="#" class="social-badge">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Love-Spark. Powered by Cosmic-Romance.</p>
+        </div>
+    </footer>
 </body>
+
+<script src="../js/episodes.js"></script>
+
 </html>
