@@ -1,0 +1,118 @@
+:root {
+    --rosa-cerejeira: #FFCAD4;
+    --azul-ceu: #B5E2FA;
+    --branco-papel: #FFFDF9;
+    --grafite: #3D3A45;
+    --azul-escuro: #1D3557;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--azul-escuro);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grafite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.cover-container {
+    background-color: var(--branco-papel);
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid rgba(61, 58, 69, 0.1);
+}
+
+.cover-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cover-header p {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.main-image-frame {
+    width: 100%;
+    height: 400px;
+    background-color: #eee;
+    border: 2px solid var(--grafite);
+    padding: 10px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.main-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(0.9) brightness(1.1);
+}
+
+.cover-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.edicao {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.btn-abrir {
+    background-color: transparent;
+    color: var(--grafite);
+    border: 1px solid var(--grafite);
+    padding: 12px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-abrir:hover {
+    background-color: var(--grafite);
+    color: var(--branco-papel);
+}
+
+@media (max-width: 768px){
+    .cover-container {
+        width: 90%;
+        height: 650px;
+    }
+
+    .cover-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .cover-header p {
+        font-size: .6rem;
+    }
+
+    .main-image-frame {
+        height: 250px;
+    }
+}

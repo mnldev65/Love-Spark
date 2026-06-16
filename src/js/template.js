@@ -14,7 +14,7 @@ BotaoAesthetic.addEventListener('click', function apetarBtnAesthetic(event) {
 
 
 BotaoGeek.addEventListener('click', function apetarBtnGeek(event) {
-    window.location.href = "./templateModels/geek/html/home.html";
+    window.location.href = "./templateModels/geek/html/capa.html";
 })
 
 
