@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Luckiest+Guy&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/indice.css">
+    <title>Indice-menu</title>
+</head>
+<body>
+    <div id="modal-ia" class="modal-overlay">
+        <div class="modal-box">
+            <img src="../assets/icon/iron-man.png" alt="Mascote IA">
+            <h2>Alerta de Sistema!</h2>
+            <p>Deseja ativar o assistente interativo para acompanhar sua leitura?</p>
+            <div class="modal-buttons">
+                <button id="btn-nao-ia" class="btn-modal btn-nao">Agora Não</button>
+                <button id="btn-sim-ia" class="btn-modal btn-sim">Ativar IA!</button>
+            </div>
+        </div>
+    </div>
+    
+    <main>
+        <div class="container">
+            <h1 class="titulo">Indice da nossa história</h1>
+            <h4 class="subtitulo">Edição Especial #01</h4>
+
+            <ul class="lista">
+                <li class="lista-objeto" id="home">Prólogo: O Encontro</li>
+                <li class="lista-objeto" id="hall">Hall da Fama</li>
+                <li class="lista-objeto" id="sonora">Trilha Sonora Original</li>
+                <li class="lista-objeto" id="multiverso">Multiverso Interativo</li>
+                <li class="lista-objeto" id="Ia">Fale com o agente</li>
+                <li class="lista-objeto" id="trocar">Trocar de Modelo de Site</li>
+            </ul>
+
+            <div class="btn-indice">
+                <button class="btn-voltarCapa">
+                    Voltar
+                </button>
+                <button class="btn-avancar">
+                    Próxima
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../js/navigation.js"></script>
+</html>
